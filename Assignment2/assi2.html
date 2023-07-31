@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration Form</div><br>
+        <form action="#">
+            
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Enter your name:</span>
+                    <input type="text" id="write" name="Attributes" placeholder="Name"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter your password:</span>
+                    <input type="password" id="password">
+                    <input type="hidden" id="employee" name="" value="123" placeholder="Password"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter your age(18-30):</span>
+                    <input type="num" id="num" min="18" max="30" placeholder="Age"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter your birth date:</span>
+                    <input type="datetime-local" id="dob" placeholder="DOB"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter your number:</span>
+                    <input type="tel" id="mob no" name="telno" max length="10"placeholder="+91 **********"><br><br>
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Enter your email:</span>
+                    <input type="email" id="mail" name="my email" placeholder="abc@gmail.com"><br><br>
+                </div>
+
+                <div class="gender-details">
+                    <span class="gender-title">Select your Gender:</span>
+                    <br>
+                    <br>
+                    <input type="radio" id="gen-m" name="f">
+                    <label for="gen-m">Male</label><br><br>
+                    <input type="radio" id="gen-f" name="f">
+                    <label for="gen-f">Female</label><br><br>
+                    <input type="radio" id="gen-o" name="f">
+                    <label for="gen-o">Other</label><br><br>
+
+             
+                    
+                </div>
+
+            </div>
+            <div class="button" style="text-align:center">
+                <input type="submit" value="Register" >
+            </div>
+        </form>
+    </div>
+</body>
+</html>

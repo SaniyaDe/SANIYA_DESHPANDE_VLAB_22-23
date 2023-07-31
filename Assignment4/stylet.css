@@ -1,0 +1,20 @@
+.textar{
+    width: 100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    margin-top: 6px;
+    margin-bottom: 160x;
+    resize: vertical;
+}
+
+.container{
+background-color:#f2f2f2;;
+border-radius: 5px;
+padding: 20px;
+}
+
+form .sub input:hover{
+    background:#6347c6;
+}

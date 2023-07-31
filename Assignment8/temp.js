@@ -1,0 +1,10 @@
+const input1=prompt("Enter first string");
+console.log('First string is',input1);
+console.log(input1.toLowerCase());
+console.log(input1.toUpperCase());
+console.log(input1.slice(1));
+console.log(input1.charAt(3));
+const input2=prompt("Enter second string");
+console.log('Second string is',input2);
+let result=input1.concat(input2);
+console.log("concat result is",result);
