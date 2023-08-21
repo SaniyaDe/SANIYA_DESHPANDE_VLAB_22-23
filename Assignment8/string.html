@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Operations</title>
 </head>
 <body>
-    <h1>This is my calculator</h1>
+
+<h2>String Operations and Concatenation</h2>
+<input type="text" id="inputString1" placeholder="Enter the first string">
+<input type="text" id="inputString2" placeholder="Enter the second string">
+<button onclick="performOperationsAndConcatenate()">Perform Operations</button>
+
+<p><strong>Results:</strong></p>
+<pre id="results"></pre>
+
+<script>
+function performOperationsAndConcatenate() {
+  // Get input strings
+  var string1 = document.getElementById("inputString1").value;
+  var string2 = document.getElementById("inputString2").value;
+
+  // Perform operations
+  var slicedString = string1.slice(1, 4);
+  var lowercaseString = string1.toLowerCase();
+  var uppercaseString = string1.toUpperCase();
+  var charAtIndex = string1.charAt(2);
+
+  // Concatenate with the second string
+  var concatenatedResult = slicedString + '\n' + lowercaseString + '\n' + uppercaseString + '\n' + charAtIndex + '\n' + string2;
+
+  // Display results
+  document.getElementById("results").textContent = concatenatedResult;
+}
+</script>
+
 </body>
-<script src="temp.js"></script>
 </html>
